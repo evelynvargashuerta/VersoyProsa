@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menú Cafebrería</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark vintage-navbar fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Cafébreria Verso & Prosa</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#Inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cafes">Bebidas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Snacks">Snacks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Postres">Postres</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Tabla">Tablas de Quesos y Charcutería</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Biblioteca">Biblioteca</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Reservaciones">Reservaciones</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<br>
+<br><br>
+  <!-- Contenido de prueba -->
+  <div class="container mt-5" id="Inicio">
+    <h1>Bienvenido a Cafébreria Verso & Prosa</h1>
+    <p>Explora nuestro menú de sabores y nuestra biblioteca literaria.</p>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+  <section class="mosaico-section container mt-5"  id="Cafés">
+  <h2 class="section-title text-center mb-4">Café</h2>
+  <div class="mosaico-grid">
+    <div class="mosaico-item" onclick="openModal('Americano', 'Ideal para aquellos que buscan preparaciones más suaves. El espresso se diluye con agua caliente, lo que reduce su intensidad y crea una bebida más ligera y accesible..')">
+      <img src="imagenes/americano.jpg" alt="Imagen 1">
+    </div>
+    <div class="mosaico-item" onclick="openModal('Cafe Bombon', 'bebida dulce y deliciosa. Se caracteriza el sabor intenso que aporta el shot de espresso con la dulzura y textura cremosa de la leche condensada..')">
+      <img src="imagenes/cafe bombon.jpg" alt="Imagen 2">
+    </div>
+    <div class="mosaico-item" onclick="openModal('Cappuccino', 'Es una oda a la armonía entre un shot de espresso con leche espumada y una capa generosa de espuma de leche, creando una bebida equilibrada en sabor y textura.')">
+      <img src="imagenes/cappuccino.jpg" alt="Imagen 3">
+    </div>
+    <div class="mosaico-item" onclick="openModal('Irlandes', 'Un tipo de espresso doble en el cual se le añade Whisky y una capa consistente de nata montada o crema. Suele servirse en copa de cóctel..')">
+      <img src="imagenes/irlandes.png" alt="Imagen 4">
+    </div>
+    <div class="mosaico-item" onclick="openModal('Macchiato', 'Es una bebida similar al espresso, pero con una pequeña cantidad de leche espumada añadida en la superficie. Se caracteriza por un sabor intenso con un toque de dulzura y cremosidad..')">
+      <img src="imagenes/Macchiato.jpg" alt="Imagen 5">
+    </div>
+    <div class="mosaico-item" onclick="openModal('Mocca', 'Es una irresistible tentación para los amantes del cacao. Combina espresso, leche espumada y chocolate, creando una bebida decadente y deliciosa..')">
+      <img src="imagenes/moca blanco.jpg" alt="Imagen 6">
+    </div>
+    <div class="mosaico-item" onclick="openModal('Ristretto', 'Sabor intenso, textura cremosa y su aroma envolvente. Se prepara agregando agua caliente a alta presión a través de café finamente molido, resultando en una dosis concentrada que despierta los sentidos.')">
+      <img src="imagenes/ristretto.jpg" alt="Imagen 7">
+    </div>
+    <div class="mosaico-item" onclick="openModal('Viennese', 'Un tipo de café que puede ser espresso simple o doble el cual se acompaña en vez de leche por crema o nata, en una proporción inferior a la del propio café..')">
+     <img src="imagenes/viennese.jpg" alt="Imagen 8">
+    </div>
+  </div>
+</section>
+
+<hr class="vintage-hr">
+
+  <section class="mosaico-section container mt-5">
+  <h2 class="section-title text-center mb-4">Té</h2>
+  <div class="mosaico-grid">
+    <div class="mosaico-item" onclick="openModal('Té de Durazno', 'Refrescante y suave, con notas dulces de durazno natural.')">
+      <img src="imagenes/te de durazno.jpg" alt="Té de Durazno">
+    </div>
+    <div class="mosaico-item" onclick="openModal('Té de Frutos Rojos', 'Una mezcla vibrante de arándanos, frambuesas y moras.')">
+      <img src="imagenes/te de frutos rojos.webp" alt="Té de Frutos Rojos">
+    </div>
+    <div class="mosaico-item" onclick="openModal('Té de Lavanda', 'Aromático y relajante, ideal para tardes tranquilas.')">
+      <img src="imagenes/te de lavanda.jpg" alt="Té de Lavanda">
+    </div>
+    <div class="mosaico-item" onclick="openModal('Té de Manzana y Canela', 'Una fusión cálida con notas especiadas y dulces.')">
+      <img src="imagenes/te de manzana con canela.jpg" alt="Té de Manzana y Canela">
+    </div>
+    <div class="mosaico-item" onclick="openModal('Té de Manzanilla', 'Clásico y reconfortante, con un toque floral.')">
+      <img src="imagenes/te de manzanilla.jpg" alt="Té de Manzanilla">
+    </div>
+    <div class="mosaico-item" onclick="openModal('Té Verde con Arándanos', 'Equilibrio entre frescura y dulzura frutal.')">
+      <img src="imagenes/te verde con arandanos.png" alt="Té Verde con Arándanos">
+    </div>
+    <div class="mosaico-item" onclick="openModal('Té Verde con Mandarina', 'Cítrico, energizante y refrescante.')">
+      <img src="imagenes/te verde con mandarina.jpg" alt="Té Verde con Mandarina">
+    </div>
+    <div class="mosaico-item" onclick="openModal('Té Verde con Mango', 'Exótico y tropical, con aroma dulce y suave.')">
+      <img src="imagenes/te verde con mnago.jpg" alt="Té Verde con Mango">
+    </div>
+  </div>
+</section>
+
+<hr class="vintage-hr">
+
+ <section class="mosaico-section container mt-5">
+  <h2 class="section-title">Vinos</h2>
+  <div class="mosaico-grid">
+   <div class="mosaico-item" onclick="openModal('Pinot Noir', 'Tinto de cuerpo ligero a medio, con taninos más suaves que muchas otras tintas. Aromas de cereza, frambuesa, fresa, y con cierta expresión terrosa/micológica con los años (setas, hojas húmedas).')">
+      <img src="imagenes/vino1.png" alt="imagen 1">
+    </div>
+    <div class="mosaico-item" onclick="openModal('Sauvignon Blanc', 'Vino blanco de carácter más fresco y aromático; suele ofrecer notas herbáceas, de hierba recién cortada o pimiento verde, así como fruta tropical o cítricos dependiendo del clima.')">
+      <img src="imagenes/vino2.png" alt="imagen 2">
+    </div>
+    <div class="mosaico-item" onclick="openModal('Riesling', 'Muy aromático, con una gran variedad de estilos: desde totalmente secos hasta dulces de postre. Presenta fruta de huerta (durazno, albaricoque, manzana, pera), flores, a veces notas minerales.')">
+      <img src="imagenes/vino3.png" alt="imagen 3">
+    </div>
+    <div class="mosaico-item" onclick="openModal('Malbec', 'Vino tinto más potente, cuerpo medio a completo, con sabor a frutas oscuras (ciruela, mora), y a menudo con notas de chocolate, tabaco o vainilla si ha pasado por barrica. Ideal para carnes rojas, parrilladas, platos más intensos.')">
+      <img src="imagenes/vino4.png" alt="imagen 4">
+    </div>
+    <div class="mosaico-item" onclick="openModal('Merlot', 'Vino tinto de estilo medio, generalmente suave, redondo, con frutas negras o rojas maduras (ciruela, cereza), taninos moderados.')">
+      <img src="imagenes/vino5.png" alt="imagen 5">
+    </div>
+    <div class="mosaico-item" onclick="openModal('Syrah', 'Vino tinto de cuerpo completo, taninos medio-altos, y aromas de mora, ciruela negra, pimienta negra, especias e incluso chocolate.')">
+      <img src="imagenes/vino6.png" alt="imagen 6">
+    </div>
+    <div class="mosaico-item" onclick="openModal('Vino rosado', 'Un estilo intermedio entre blanco y tinto: ligero, fresco, frutal, muchas veces con acidez moderada y notas de fresa, frambuesa, cereza.')">
+      <img src="imagenes/vino7 (1).png" alt="imagen 7">
+    </div>
+    <div class="mosaico-item" onclick="openModal('Chardonnay', 'Un vino blanco muy versátil, presenta cuerpo medio-ligero, buena acidez, sabores de manzana verde, pera y melón.')">
+      <img src="imagenes/vino8.png" alt="imagen 8">
+    </div>
+  </div>
+</section>
+
+<hr class="vintage-hr">
+
+ <section class="mosaico-section container mt-5" id="Snacks">
+  <h2 class="section-title">Snacks</h2>
+  <div class="mosaico-grid">
+    <div class="mosaico-item" onclick="openModal('Baguette de carnes frias', 'Una baguette recién horneada, con corteza ligera y miga esponjosa, rellena generosamente con una selección de carnes frías: jamón, salami o pepperoni y pavo ahumado. Sobre la base de pan se unta una capa cremosa de mayonesa (o mayonesa + mostaza). La combinación se completa con hojas frescas de lechuga o arúgula y rodajas de jitomate o cebolla morada, que ofrecen un contraste crujiente y vegetal.')">
+      <img src="imagenes/baguette de carnes frias.png" alt="imagen 1">
+    </div>
+    <div class="mosaico-item" onclick="openModal('Beagels DE jamon', 'Un pan bagel, ligeramente tostado para lograr una corteza exterior crujiente y un interior miga-densa y masticable, que se abre por la mitad y se rellena con generosas lonchas de jamón —ya sea jamón cocido-dulce o jamón serrano más curado—. Acompañado idealmente de un queso cremoso o en lonchas suaves, hojas verdes frescas como rúcula o lechuga, y si se desea, rodajas de tomate o un toque de mostaza/mayonesa para aportar sabor y humedad.')">
+      <img src="imagenes/beagels de jamon.jpg" alt="imagen 2">
+    </div>
+    <div class="mosaico-item" onclick="openModal('Chapata de jamon cerrano', 'Una generosa pieza de pan tipo chapata —con corteza dorada, ligera y crujiente, y miga aireada. Sobre la base se colocan finas lonchas de Jamón serrano, sal suave y un matiz curado propio del embutido Iberico. Complementan el conjunto hojas frescas de lechuga o arúgula y rodajas de tomate maduro. Una ligera capa de mayonesa, mostaza Dijon y aceite de oliva virgen extra')">
+      <img src="imagenes/chapata de jamon cerrano.jpg" alt="imagen 3">
+    </div>
+    <div class="mosaico-item" onclick="openModal('Club-sandwich', 'sándwich de tres rebanadas de pan ligeramente tostadas que albergan dos capas de relleno. Las piezas interiores suelen incluir carne (como pollo o pavo), tiras crujientes de tocino, hojas de lechuga fresca, rodajas de tomate y una buena dosis de mayonesa.')">
+      <img src="imagenes/Club-sandwich.jpg" alt="imagen 4">
+    </div>
+    <div class="mosaico-item" onclick="openModal('Croisant-relleno', 'Un delicioso cruasán de masa hojaldrada dorada rellena con lonchas de jamón curado o cocido de calidad. puede añadirse una capa ligera de queso cremoso o en lonchas, unas hojas de lechuga fresca o rúcula y una pizca de mostaza o mayonesa')">
+      <img src="imagenes/croisant-relleno.jpg" alt="imagen 5">
+    </div>
+    <div class="mosaico-item" onclick="openModal('Nuggets de pollo', 'Pequeños bocados de pechuga de pollo, recubiertos de una capa crujiente de empanado frito o horneados hasta obtener un exterior dorado y crujiente. Al morderlos, ofrecen una combinación de textura crujiente por fuera y jugosidad por dentro, ideales para acompañar con salsas varias (barbacoa, mostaza-miel, etc.).')">
+      <img src="imagenes/nuggets de pollo.jpg" alt="imagen 6">
+    </div>
+    <div class="mosaico-item" onclick="openModal('Patatas gajo', 'Son patatas cortadas en forma de cuña o “gajo”, conservando típicamente la piel, lo que les aporta textura rústica y sabor adicional. Se sazonan con especias (como pimentón, ajo en polvo, pimienta) y se cocinan hasta que queden doradas y crujientes por fuera, manteniéndose tiernas por dentro.')">
+      <img src="imagenes/Patatas gajo.jpg" alt="imagen 7">
+    </div>
+    <div class="mosaico-item" onclick="openModal('Pizza Margherita', 'una base de masa fina y ligera, cubierta con tomate, queso mozzarella fresco, unas hojas de albahaca y un chorrito de aceite de oliva virgen extra')">
+      <img src="imagenes/PIZZA-MARGHERITA.jpg" alt="imagen 8">
+    </div>
+  </div>
+</section>
+
+<hr class="vintage-hr">
+
+<section class="mosaico-section container mt-5"  id="Postres">
+  <h2 class="section-title">Postres</h2>
+  <div class="mosaico-grid">
+ <div class="mosaico-item" onclick="openModal('carlota', 'El resultado es una textura cremosa, con el contraste agradable entre el dulzor de la mezcla y la acidez del limón, servida bien fría para disfrutar su frescura.')">
+      <img src="imagenes/carlota de limon.jpg" alt="imagen 1">
+    </div>
+    <div class="mosaico-item" onclick="openModal('crepas', 'se pueden rellenar y servir tanto en versión salada (queso, jamón, vegetales, carnes) como dulce (mermeladas, chocolate, frutas, crema batida).')">
+      <img src="imagenes/crepas.jpg" alt="imagen 2">
+    </div>
+    <div class="mosaico-item" onclick="openModal('cubilete de queso', 'La parte exterior ofrece una textura ligeramente firme y dorada, mientras que el interior engaña con suavidad cremosa, dulce y ligeramente ácida por el queso.')">
+      <img src="imagenes/cubilete de queso.jpg" alt="imagen 3">
+    </div>
+    <div class="mosaico-item" onclick="openModal('panque de nuez', 'Un bizcocho alargado y esponjoso, elaborado con mantequilla, huevos, azúcar y harina, en el que se incorporan trocitos de nuez que aportan sabor y textura crujiente.')">
+      <img src="imagenes/panque-nuez.jpg" alt="imagen 4">
+    </div>
+    <div class="mosaico-item" onclick="openModal('pastel de chocolate', 'Compuesto por bizcocho suave y esponjoso aromatizado con cacao o chocolate, y a menudo bañado o relleno con ganache, crema o cobertura de chocolate.')">
+      <img src="imagenes/pastel-de-chocolate.jpg" alt="imagen 5">
+    </div>
+    <div class="mosaico-item" onclick="openModal('Tiramissu', 'El Tiramisù es un postre frío de origen italiano, se utilizan bizcochos empapados en licor de café, alternados con una crema suave de queso mascarpone.')">
+      <img src="imagenes/riramissu.jpg" alt="imagen 6">
+    </div>
+    <div class="mosaico-item" onclick="openModal('Tartaleta de frutos rojos', 'Una base de masa quebrada o sablée bien horneada, un relleno cremoso ligero de crema pastelera o  queso mascarpone y una cubierta generosa de frutos rojos frescos.')">
+      <img src="imagenes/tartaleta de frutos rojos.jpg" alt="imagen 7">
+    </div>
+    <div class="mosaico-item" onclick="openModal('Waffle', 'Tortita que se cocina entre dos placas especiales que imprimen un patrón de rejas y se sirve en una versión dulce (con jarabe de arce, fruta fresca, chantilly)')">
+      <img src="imagenes/Waffle.jpg" alt="imagen 8">
+    </div>
+</section>
+
+<hr class="vintage-hr">
+
+ <section class="mosaico-section container mt-5"   id="Tabla">
+  <h2 class="section-title">Tabla de Quesos y Charcutería</h2>
+  <div class="mosaico-grid">
+     <div class="mosaico-item" onclick="openModal('Tabla clásica de quesos & fiambres', 'Una cuidada selección de cuatro o cinco quesos de texturas variadas (blando, semicurado, añejo) acompañados de lonchas finas de jamón serrano o prosciutto, salami o chorizo, junto con pan tostado, frutas frescas como uvas y nueces: combina sabores suaves, salados y crujientes.')">
+      <img src="imagenes/T1.jpg" alt="imagen 1">
+    </div>
+    <div class="mosaico-item" onclick="openModal('Tabla gourmet de quesos artesanales y embutidos curados', 'Quesos de oveja o cabra, quizá un azul, junto a embutidos más elaborados —como copa o lomo embuchado— presentados sobre tabla de madera, con acompañamientos como mermelada de higos, aceitunas rellenas y almendras tostadas.')">
+      <img src="imagenes/T2.jpg" alt="imagen 2">
+    </div>
+    <div class="mosaico-item" onclick="openModal('Tabla minimalista', 'Una versión elegante y simplificada: tres quesos seleccionados (uno blando, uno semicurado, uno curado), dos embutidos premium, pan artesanal, mantequilla salada o aceite de oliva virgen extra. La simplicidad permite que cada sabor destaque.')">
+      <img src="imagenes/T3.jpg" alt="imagen 3">
+    </div>
+    <div class="mosaico-item" onclick="openModal('Tabla mediterránea', 'Inspirada en sabores del sur de Europa: queso manchego o pecorino, jamón ibérico, chorizo, pepinillos en vinagre, aceitunas verdes, pan de campo y un toque de miel o mostaza dijon para equilibrio dulce-salado.')">
+      <img src="imagenes/T4.jpg" alt="imagen 4">
+    </div>
+    <div class="mosaico-item" onclick="openModal('Quesos suaves & charcutería ligera', 'Perfecta para paladares más delicados: queso brie o camembert, queso fresco de cabra, lonchas finas de pavo o jamón cocido, crackers ligeros, pera o manzana en rodajas y miel de acento delicado.')">
+      <img src="imagenes/T5.jpg" alt="imagen 5">
+    </div>
+    <div class="mosaico-item" onclick="openModal('Tabla rústica de quesos fuertes y embutidos intensos', 'Quesos de sabor potente (por ejemplo azul o añejo curado), salami picante, fuet o salchichón, nueces y pan rústico. Ideal para combinar con vinos tintos robustos o cerveza artesana.')">
+      <img src="imagenes/T6.jpg" alt="imagen 6">
+    </div>
+    <div class="mosaico-item" onclick="openModal('Tabla temática temporada', 'Quesos especiados (queso al pimentón, queso con hierbas), embutidos navideños, frutos secos glaseados, mermelada de arándanos, pan de nueces. Presentación en madera oscura para ambiente invernal o festivo.')">
+      <img src="imagenes/T7.jpg" alt="imagen 7">
+    </div>
+    <div class="mosaico-item" onclick="openModal('Tabla frutal', 'Añade variedad de frutas, además de quesos y embutidos tradicionales. El contraste frutal ofrece frescura y ligereza al conjunto.')">
+      <img src="imagenes/T8.jpeg" alt="imagen 8">
+    </div>
+  </div>
+</section>
+
+<hr class="vintage-hr">
+
+
+<main class="carousel-wrap" id="Biblioteca">
+    <!-- Radios (controlan qué slide está activo) -->
+    <input type="radio" name="slider" id="slide1" checked>
+    <input type="radio" name="slider" id="slide2">
+    <input type="radio" name="slider" id="slide3">
+    <input type="radio" name="slider" id="slide4">
+    <input type="radio" name="slider" id="slide5">
+    <input type="radio" name="slider" id="slide6">
+    <input type="radio" name="slider" id="slide7">
+    <input type="radio" name="slider" id="slide8">
+    <input type="radio" name="slider" id="slide9">
+    <input type="radio" name="slider" id="slide10">
+
+    <!-- Carril de slides -->
+    <div class="carousel">
+      <div class="slides">
+        <!-- Slide 1 -->
+        <section class="slide">
+          <div class="book">
+            <div class="cover"> <!-- reemplaza por <img> si deseas -->
+               <img src="imagenes/libro1.jpg" class="imagen">
+              
+            </div>
+            <div class="meta">
+              <p>Cassidy, Olivia y Naomi son tres niñas que, unidas por su fascinación por la magia, 
+                pasan el verano vagando por el bosque, imaginando un mundo de ceremonias y rituales. 
+                Hasta que un día, Naomi es atacada en uno de esos paseos, pero sobrevive a pesar 
+                de recibir diecisiete puñaladas.</p>
+            </div>
+          </div>
+          <div class="nav">
+            <label for="slide10" class="prev" aria-label="Anterior">◀</label>
+            <label for="slide2"  class="next" aria-label="Siguiente">▶</label>
+          </div>
+        </section>
+
+        <!-- Slide 2 -->
+        <section class="slide">
+          <div class="book">
+            <div class="cover">
+              <img src="imagenes/libro 2.jpg" class="imagen">
+            </div>
+            <div class="meta">
+              <p> Un poemario que aborda las complejidades del amor, el desamor, la alegría y la 
+                tristeza de la existencia humana a través de versos emotivos y melancólicos.</p>
+            </div>
+          </div>
+          <div class="nav">
+            <label for="slide1" class="prev" aria-label="Anterior">◀</label>
+            <label for="slide3" class="next" aria-label="Siguiente">▶</label>
+          </div>
+        </section>
+
+        <!-- Slide 3 -->
+        <section class="slide">
+          <div class="book">
+            <div class="cover">
+          <img src="imagenes/libro 3.jpg" class="imagen">
+            </div>
+            <div class="meta">
+              <p>Una saga de fantasía sobre el conflicto entre los reinos de Limeros, Paelsia y Auranos, 
+                centrándose en las historias de los príncipes Magnus y Lucía, el rebelde Jonas, y la 
+                princesa Cleo en medio de una guerra inminente. </p>
+            </div>
+          </div>
+          <div class="nav">
+            <label for="slide2" class="prev" aria-label="Anterior">◀</label>
+            <label for="slide4" class="next" aria-label="Siguiente">▶</label>
+          </div>
+        </section>
+
+        <!-- Slide 4 -->
+        <section class="slide">
+          <div class="book">
+            <div class="cover">
+           <img src="imagenes/libro 4.jpg" class="imagen">
+            </div>
+            <div class="meta">
+              <p>Se centran en la histeria colectiva que se desató en la América colonial en 1692. 
+                En ellos se narra cómo una comunidad puritana, bajo el yugo de un fanatismo religioso, 
+                comenzó a acusar a sus vecinos de brujería, lo que resultó en juicios y ejecuciones
+                 basadas principalmente en rumores y miedo.</p>
+            </div>
+          </div>
+          <div class="nav">
+            <label for="slide3" class="prev" aria-label="Anterior">◀</label>
+            <label for="slide5" class="next" aria-label="Siguiente">▶</label>
+          </div>
+        </section>
+
+        <!-- Slide 5 -->
+        <section class="slide">
+          <div class="book">
+            <div class="cover">
+              <img src="imagenes/libro 5.jpg" class="imagen">
+            </div>
+            <div class="meta">
+              <p>Isabel murió besando a Diego. Ya nadie y ya nada podría separarlos. Los dos cuerpos 
+                fueron velados juntos, en un altar a su amor infortunado. Una estruendosa lluvia anegó 
+                las huertas de Teruel durante varios días, mientras los amantes recibían el homenaje 
+                silencioso del mundo hasta que fueran sepultados en la misma tumba. Juntos para siempre.</p>
+            </div>
+          </div>
+          <div class="nav">
+            <label for="slide4" class="prev" aria-label="Anterior">◀</label>
+            <label for="slide6" class="next" aria-label="Siguiente">▶</label>
+          </div>
+        </section>
+
+        <!-- Slide 6 -->
+        <section class="slide">
+          <div class="book">
+            <div class="cover">
+             <img src="imagenes/libro 6.jpg" class="imagen">
+            </div>
+            <div class="meta">
+              <p>Narra la historia de dos adolescentes de Beaufort, Carolina del Norte, en 1958. 
+                Landon Carter, un chico rebelde y popular, se enamora inesperadamente de Jamie Sullivan, 
+                la hija del pastor bautista. A través de su relación, ambos personajes evolucionan, y la 
+                historia aborda temas profundos como la fe, la madurez y el amor verdadero, culminando en 
+                un evento que cambia sus vidas para siempre.</p>
+            </div>
+          </div>
+          <div class="nav">
+            <label for="slide5" class="prev" aria-label="Anterior">◀</label>
+            <label for="slide7" class="next" aria-label="Siguiente">▶</label>
+          </div>
+        </section>
+
+        <!-- Slide 7 -->
+        <section class="slide">
+          <div class="book">
+            <div class="cover">
+               <img src="imagenes/libro7.jpg" class="imagen">
+            </div>
+            <div class="meta">
+              <p>Saura Homar, una historiadora del arte que viaja a una antigua hacienda en la Toscana para sanar 
+                heridas. Allí, se ve envuelta en una investigación sobre un misterioso lienzo.</p>
+            </div>
+          </div>
+          <div class="nav">
+            <label for="slide6" class="prev" aria-label="Anterior">◀</label>
+            <label for="slide8" class="next" aria-label="Siguiente">▶</label>
+          </div>
+        </section>
+
+        <!-- Slide 8 -->
+        <section class="slide">
+          <div class="book">
+            <div class="cover">
+               <img src="imagenes/libro8.jpg" class="imagen">
+            </div>
+            <div class="meta">
+              <p> La trama se centra en un matrimonio estadounidense en un viaje a Europa con el objetivo de 
+                adoptar un niño. La relación de la pareja se encuentra en una profunda crisis a causa de la 
+                grave enfermedad de la esposa, y ambos esperan que la paternidad los ayude a reencontrarse. 
+                Durante la espera en un misterioso hotel, los personajes son envueltos en eventos extraños 
+                que los obligan a reconsiderar sus propias certezas y esperanzas. </p>
+            </div>
+          </div>
+          <div class="nav">
+            <label for="slide7" class="prev" aria-label="Anterior">◀</label>
+            <label for="slide9" class="next" aria-label="Siguiente">▶</label>
+          </div>
+        </section>
+
+        <!-- Slide 9 -->
+        <section class="slide">
+          <div class="book">
+            <div class="cover">
+               <img src="imagenes/libro 9.jpg" class="imagen">
+            </div>
+            <div class="meta">
+              <p>Narra siete días en la vida de Auri, una antigua alumna de la Universidad que vive en un 
+                mundo oculto llamado la Subrealidad, bajo el edificio principal.. La historia se centra en 
+                Auri mientras explora y cuida su entorno, buscando el regalo perfecto para la inminente 
+                visita de Kvothe. El libro explora los misterios y secretos que existen más allá de la 
+                lógica convencional de la Universidad. </p>
+            </div>
+          </div>
+          <div class="nav">
+            <label for="slide8" class="prev" aria-label="Anterior">◀</label>
+            <label for="slide10" class="next" aria-label="Siguiente">▶</label>
+          </div>
+        </section>
+
+        <!-- Slide 10 -->
+        <section class="slide">
+          <div class="book">
+            <div class="cover">
+               <img src="imagenes/libro 10.jpg" class="imagen">
+            </div>
+            <div class="meta">
+              <p>trata de Pablo, quien tras regresar de Londres, se ve dividido entre su amor de la infancia, 
+                Ana, y Lily, una joven con un pasado traumático que también está conectado al suyo. Los tres 
+                protagonistas están unidos por una tragedia que los marca desde la niñez y que resurge al 
+                reencontrarse. El libro explora cómo el amor, la amistad y el destino se entrelazan, revelando 
+                secretos que pondrán en riesgo su futuro. </p>
+            </div>
+          </div>
+          <div class="nav">
+            <label for="slide9" class="prev" aria-label="Anterior">◀</label>
+            <label for="slide1" class="next" aria-label="Siguiente">▶</label>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Indicadores (opcional): pequeños botones para ir a cada slide -->
+    <div class="indicators">
+      <label for="slide1" class="dot" aria-label="Ir al libro 1"></label>
+      <label for="slide2" class="dot" aria-label="Ir al libro 2"></label>
+      <label for="slide3" class="dot" aria-label="Ir al libro 3"></label>
+      <label for="slide4" class="dot" aria-label="Ir al libro 4"></label>
+      <label for="slide5" class="dot" aria-label="Ir al libro 5"></label>
+      <label for="slide6" class="dot" aria-label="Ir al libro 6"></label>
+      <label for="slide7" class="dot" aria-label="Ir al libro 7"></label>
+      <label for="slide8" class="dot" aria-label="Ir al libro 8"></label>
+      <label for="slide9" class="dot" aria-label="Ir al libro 9"></label>
+      <label for="slide10" class="dot" aria-label="Ir al libro 10"></label>
+    </div>
+  </main>
+ 
+
+<hr class="vintage-hr">
+
+ <section class="contacto" id="Reservaciones">
+    <div class="contacto-container">
+      <h2>Reservaciones</h2>
+      <p>Reserva tu mesa o tu espacio de lectura. ¡Nos encantará recibirte!</p>
+
+      <form action="#" method="post" class="form-reserva">
+        <div class="campo">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre" />
+        </div>
+
+        <div class="campo">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required placeholder="tucorreo@ejemplo.com" />
+        </div>
+
+        <div class="campo">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" required placeholder="+52 55 0000 0000" />
+        </div>
+
+        <div class="campo">
+          <label for="fecha">Fecha de la reserva</label>
+          <input type="date" id="fecha" name="fecha" required />
+        </div>
+
+        <div class="campo">
+          <label for="hora">Hora</label>
+          <input type="time" id="hora" name="hora" required />
+        </div>
+
+        <div class="campo">
+          <label for="personas">Número de personas</label>
+          <input type="number" id="personas" name="personas" min="1" max="20" required />
+        </div>
+
+        <div class="campo">
+          <label for="mensaje">Mensaje adicional</label>
+          <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿Alguna petición especial?"></textarea>
+        </div>
+
+        <button type="submit" class="btn-enviar">Enviar reserva</button>
+      </form>
+    </div>
+  </section>
+
+<hr class="vintage-hr">
+           
+
+
+
+
+
+
+
+
+<!-- Modal (cuadro emergente) -->
+<div id="modalOverlay" class="modal-overlay" onclick="closeModal()">
+  <div class="modal-content" onclick="event.stopPropagation()">
+    <h3 id="modalTitle"></h3>
+    <p id="modalDescription"></p>
+    <button class="modal-close" onclick="closeModal()">Cerrar</button>
+    <button class="modal-close" onclick="closeModal()">Añadir +</button>
+  </div>
+</div>
+
+<script>
+  function openModal(title, description) {
+    document.getElementById('modalTitle').textContent = title;
+    document.getElementById('modalDescription').textContent = description;
+    document.getElementById('modalOverlay').classList.add('active');
+  }
+
+  function closeModal() {
+    document.getElementById('modalOverlay').classList.remove('active');
+  }
+</script>
+
+</body>
+</html>
