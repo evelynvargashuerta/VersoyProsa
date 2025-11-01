@@ -194,6 +194,7 @@ h1 {
   user-select: none;
 }
 
+
 /* Oculta los radios */
 .carousel-wrap input[type="radio"] { display: none; }
 
@@ -336,7 +337,7 @@ text-align: justify;
 /* Responsivo */
 @media (max-width: 700px) {
   .cover { width: 120px; height: 180px; }
-  .carousel-wrap { width: 96%; }
+  .carousel-wrap { width: 80%; height:400px;}
   .nav label { width: 40px; height: 40px; }
 }
 
@@ -449,3 +450,4 @@ input:focus, textarea:focus {
     font-size: 1.6rem;
   }
 }
+
